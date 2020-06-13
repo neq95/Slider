@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel {
+    margin: 4rem auto;
+    width: 800px;
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    overflow-x: hidden;
+    border: 2px solid darkgrey;
+    border-radius: 15%;
+
+    &__slider {
+        height: 100%;
+        display: flex;
+        flex-shrink: 0;
+        transition: all .6s ease;
+    }
+
+    &__slide {
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        padding-top: 6rem;
+        color: lightsalmon;
+        font-size: 3rem;
+        color: #fff;
+    }
+
+    &__controls {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 2rem;
+        display: flex;
+        justify-content: space-between;
+        font-size: 3rem;
+    }
+}
+
+.slide {
+    &--1 {
+        background: url("../images/394230.jpg") no-repeat center / cover;
+    }
+    &--2 {
+        background: url("../images/Animal-Crossing-New-Horizons-1080P-Wallpaper-2-1024x576.jpg") no-repeat center / cover;
+    }
+    &--3 {
+        background: url("../images/ca760b70976b52578da88e06973af542.jpg") no-repeat center / cover;
+    }
+    &--4 {
+        background: url("../images/gud-night-images.jpg") no-repeat center / cover;
+    }
+    &--5 {
+        background: url("../images/heic2007a.jpg") no-repeat center / cover;
+    }
+    &--6 {
+        background: url("../images/https___cdn.cnn.com_cnnnext_dam_assets_191120053137-03-milky-way-images-australia.jpg") no-repeat center / cover;
+    }
+}
+
+.controls {
+    &__arrow {
+        color: #46b971;
+        cursor: pointer;
+        transition: all .3s ease;
+
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+}
